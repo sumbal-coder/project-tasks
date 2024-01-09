@@ -8,7 +8,7 @@
             <table class="data_table table table-bordered table-striped dataTable" width="100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>#</th>
                         <th>Title</th>
                         <th>Description</th>
                         <th>Priority</th>
@@ -59,6 +59,7 @@
         table = $('.data_table').DataTable({
             processing: true,
             serverSide: true,
+            select: true,
             ajax: "{{ route('tasks.index') }}",
             columns: [{
                     data: 'DT_RowIndex',
@@ -73,8 +74,8 @@
                     name: 'description'
                 },
                 {
-                    data: 'priority',
-                    name: 'priority'
+                    data: 'priority', // Use 'priority' as the data attribute
+                    name: 'priority',
                 },
                 {
                     data: 'due_date',

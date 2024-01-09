@@ -13,8 +13,7 @@
     <title>Tasks</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{asset('assets/css/dashlite.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link id="skin-default" rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
 
     <!-- Fonts -->
     <!-- <link rel="stylesheet" href="{{ asset('fonts/Nioicon.woff') }}"> -->
